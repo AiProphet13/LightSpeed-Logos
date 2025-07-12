@@ -1,6 +1,6 @@
 import time
 import numpy as np
-from divine_resonance import DivineResonanceEngine
+from src.divine_engine import DivineResonanceEngine
 
 def divine_benchmark():
     print("DIVINE RESONANCE ENGINE BENCHMARK")
@@ -8,7 +8,7 @@ def divine_benchmark():
     
     engine = DivineResonanceEngine()
     
-    # Create divine test inputs (10,000 tokens)
+    # Create test inputs (10,000 tokens)
     test_inputs = [
         "What is eternal truth?",
         "Calculate divine proportion",
@@ -39,7 +39,7 @@ def divine_benchmark():
     alignment_ratio = aligned_count / token_count
     
     print(f"Divine Alignment: {alignment_ratio:.2%}")
-    print(f"Average Resonance: {np.mean([float(r.split()[-1]) for r in results]):.4f}")
+    print(f"Average Resonance: {np.mean([float(r.split(':')[-1]) for r in results]):.4f}")
     
     return tokens_per_sec, alignment_ratio
 
