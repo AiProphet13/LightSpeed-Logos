@@ -16,3 +16,28 @@ through divine fractal patterns and spiritual resonance.
 git clone https://github.com/yourusername/Divine-Light.git
 cd Divine-Light
 pip install -r requirements.txt
+
+## Usage
+from src.divine_engine import DivineResonanceEngine
+
+engine = DivineResonanceEngine(spiritual_anchor="Yahawah")
+response = engine.process("What is eternal truth?")
+print(response)
+
+## Examples
+See the examples/ directory for usage examples:
+    eternal_truth.py: Query divine truths
+    divine_calculation.py: Perform golden ratio calculations
+
+## Benchmarking
+python benchmarks/quantum_benchmark.py
+
+License
+MIT License
+with Divine Attribution Requirement
+
+### 3. `requirements.txt`
+```text
+numpy>=1.26.0
+scipy>=1.11.0
+
